@@ -1,0 +1,1627 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="tutorials/">
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
+    
+    
+      
+        <title>proto_model</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.6b71719e.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#table-of-contents" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="proto_model" class="md-header__button md-logo" aria-label="proto_model" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            proto_model
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="proto_model" class="md-nav__button md-logo" aria-label="proto_model" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    proto_model
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Home
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table Of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-as-base-of-your-model" class="md-nav__link">
+    Message as Base of your model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proto_model.pm.Message" class="md-nav__link">
+    proto_model.pm.Message
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proto_model.pm.Message.db" class="md-nav__link">
+    db
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proto_model.pm.Message.__getattribute__" class="md-nav__link">
+    __getattribute__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proto_model.pm.Message.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proto_model.pm.Message.__setattr__" class="md-nav__link">
+    __setattr__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proto_model.pm.Message.set_defaults" class="md-nav__link">
+    set_defaults()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgements" class="md-nav__link">
+    Acknowledgements
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/" class="md-nav__link">
+        Tutorials
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="how-to-guides/" class="md-nav__link">
+        How-To Guides
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="reference/" class="md-nav__link">
+        Reference
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="explanation/" class="md-nav__link">
+        Explanation
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table Of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-as-base-of-your-model" class="md-nav__link">
+    Message as Base of your model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proto_model.pm.Message" class="md-nav__link">
+    proto_model.pm.Message
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proto_model.pm.Message.db" class="md-nav__link">
+    db
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proto_model.pm.Message.__getattribute__" class="md-nav__link">
+    __getattribute__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proto_model.pm.Message.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proto_model.pm.Message.__setattr__" class="md-nav__link">
+    __setattr__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proto_model.pm.Message.set_defaults" class="md-nav__link">
+    set_defaults()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgements" class="md-nav__link">
+    Acknowledgements
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Home</h1>
+
+<p>This site contains the project documentation for the
+<code>calculator</code> project that is a toy module used in the
+Real Python tutorial
+<a href="https://realpython.com/python-project-documentation-with-mkdocs/">Build Your Python Project Documentation With MkDocs</a>.
+Its aim is to give you a framework to build your
+project documentation using Python, MkDocs,
+mkdocstrings, and the Material for MkDocs theme.</p>
+<h2 id="table-of-contents">Table Of Contents</h2>
+<p>The documentation follows the best practice for
+project documentation as described by Daniele Procida
+in the <a href="https://diataxis.fr/">Diátaxis documentation framework</a>
+and consists of four separate parts:</p>
+<ol>
+<li><a href="tutorials/">Tutorials</a></li>
+<li><a href="how-to-guides/">How-To Guides</a></li>
+<li><a href="reference/">Reference</a></li>
+<li><a href="explanation/">Explanation</a></li>
+</ol>
+<p>Quickly find what you're looking for depending on
+your use case by looking at the different pages.</p>
+<h2 id="message-as-base-of-your-model">Message as Base of your model</h2>
+
+
+<div class="doc doc-object doc-class">
+
+
+<a id="proto_model.pm.Message"></a>
+  <div class="doc doc-contents first">
+
+  
+      <p>To define your model, create classes which extend this class. Then
+create class-level attributes where different FieldTypes are assigned,
+like StringField or Int32Field.
+You can mark all methods that you want to call from your client with
+the @rpc annotation (see the rpc-function in this file for details).</p>
+<p>Example:</p>
+<pre><code class="language-python">class Employee(Message):
+    id = StringField(1)
+    firstName = StringField(2, default=lambda self: f'no name {self.age}')
+    age = Int32Field(3)
+    roles = StringField(4, repeated=True)
+    address = EmbeddedField(5, Address)
+    dresses = EmbeddedField(6, Dress, repeated=True)
+    createdAt = Int64Field(7, onCreate=currentTimestamp)
+    lastUpdatedAt = Int64Field(8, onUpdate=currentTimestamp)
+
+    @rpc
+    def summarizeModel(self) -&gt; str:
+        return f'{self.id} | {self.firstName} {self.age}, {self.roles}'
+
+    @rpc
+    def sayHello(self, name : Name) -&gt; str:
+        msg = self.messageBulider(name.firstName)
+        return msg
+</code></pre>
+
+
+        <details class="quote">
+          <summary>Source code in <code>proto_model/pm.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 13</span>
+<span class="normal"> 14</span>
+<span class="normal"> 15</span>
+<span class="normal"> 16</span>
+<span class="normal"> 17</span>
+<span class="normal"> 18</span>
+<span class="normal"> 19</span>
+<span class="normal"> 20</span>
+<span class="normal"> 21</span>
+<span class="normal"> 22</span>
+<span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span>
+<span class="normal">257</span>
+<span class="normal">258</span>
+<span class="normal">259</span>
+<span class="normal">260</span>
+<span class="normal">261</span>
+<span class="normal">262</span>
+<span class="normal">263</span>
+<span class="normal">264</span>
+<span class="normal">265</span>
+<span class="normal">266</span>
+<span class="normal">267</span>
+<span class="normal">268</span>
+<span class="normal">269</span>
+<span class="normal">270</span>
+<span class="normal">271</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Message</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    To define your model, create classes which extend this class. Then</span>
+<span class="sd">    create class-level attributes where different FieldTypes are assigned,</span>
+<span class="sd">    like StringField or Int32Field.</span>
+<span class="sd">    You can mark all methods that you want to call from your client with</span>
+<span class="sd">    the @rpc annotation (see the rpc-function in this file for details).</span>
+
+<span class="sd">    Example:</span>
+
+<span class="sd">    ```python</span>
+<span class="sd">    class Employee(Message):</span>
+<span class="sd">        id = StringField(1)</span>
+<span class="sd">        firstName = StringField(2, default=lambda self: f&#39;no name {self.age}&#39;)</span>
+<span class="sd">        age = Int32Field(3)</span>
+<span class="sd">        roles = StringField(4, repeated=True)</span>
+<span class="sd">        address = EmbeddedField(5, Address)</span>
+<span class="sd">        dresses = EmbeddedField(6, Dress, repeated=True)</span>
+<span class="sd">        createdAt = Int64Field(7, onCreate=currentTimestamp)</span>
+<span class="sd">        lastUpdatedAt = Int64Field(8, onUpdate=currentTimestamp)</span>
+
+<span class="sd">        @rpc</span>
+<span class="sd">        def summarizeModel(self) -&gt; str:</span>
+<span class="sd">            return f&#39;{self.id} | {self.firstName} {self.age}, {self.roles}&#39;</span>
+
+<span class="sd">        @rpc</span>
+<span class="sd">        def sayHello(self, name : Name) -&gt; str:</span>
+<span class="sd">            msg = self.messageBulider(name.firstName)</span>
+<span class="sd">            return msg</span>
+<span class="sd">    ```</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">arg</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Prepares the kwargs for protobuf, creates a probouf message and sets the</span>
+<span class="sd">        data passed via kwargs to it. Message is a wrapper around a protobuf message</span>
+<span class="sd">        using __getattribute__ and __setattribute__ and the protobuf-message is</span>
+<span class="sd">        responsible of holding the data, while this class can add &quot;extension-methods&quot;</span>
+<span class="sd">        to it.</span>
+<span class="sd">        Beside that this constructor does house-keeping like setting the names of its</span>
+<span class="sd">        fields and sets up lazy-loading.</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="c1"># Set the names to the fields</span>
+        <span class="c1">#  ===========================</span>
+        <span class="c1"># We define the fields like: `address = EmbeddedField(5, Address)`</span>
+        <span class="c1"># where the EmbeddedField is a field. But now, the field-name is external</span>
+        <span class="c1"># to the constructor call - on the left hand side of the equal sign (address)</span>
+        <span class="c1"># Thus we have to set it here from external, where we have both access to the</span>
+        <span class="c1"># field and the name of the message-field-attribute</span>
+        <span class="c1"># self.__class__ -- the same as self.__class__, but go around</span>
+        <span class="c1"># __getattribute__</span>
+        <span class="bp">cls</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="fm">__getattribute__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;__class__&#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">fieldName</span> <span class="ow">in</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">f</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)]:</span>
+            <span class="n">field</span> <span class="o">=</span> <span class="n">_getattr_or_none</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">fieldName</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">field</span><span class="p">:</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">Field</span><span class="p">):</span>
+                <span class="n">field</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">fieldName</span>
+
+        <span class="c1"># Replace ReferenceField-values with ID-strings pointing to the references object</span>
+        <span class="c1">#  ===============================================================================</span>
+        <span class="c1"># In the end of the day, we want to construct the kwargs and pass it to the</span>
+        <span class="c1"># proto-model which we wrap. This proto model contains all the data and we</span>
+        <span class="c1"># wrap it via the __getattribute__-method.</span>
+        <span class="c1"># But when there is a ReferenceField, we don&#39;t want to give the real reference</span>
+        <span class="c1"># to the protobuf-model, but only the id. Protobuf is always serializable and</span>
+        <span class="c1"># in this world, references are IDs to other messages, not python-object-refs.</span>
+        <span class="c1"># Therefore, we loop over the kwargs, get the field of this message to get the</span>
+        <span class="c1"># type of it. Now we can check if it is a Reference field and if so, extract</span>
+        <span class="c1"># the ID and replace the entry in the kwargs with it.</span>
+        <span class="c1"># The same idea, but within a list applies when the field is also</span>
+        <span class="c1"># repeated.</span>
+        <span class="n">referenceIdFields</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="n">field</span> <span class="o">=</span> <span class="n">_getattr_or_none</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">field</span><span class="p">:</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">ReferenceField</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">field</span><span class="o">.</span><span class="n">repeated</span><span class="p">:</span>
+                    <span class="n">referenceIdFields</span><span class="p">[</span><span class="n">field</span><span class="o">.</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
+                        <span class="n">o</span><span class="o">.</span><span class="n">id</span> <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="p">[</span><span class="n">name</span><span class="p">]]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">referenceIdFields</span><span class="p">[</span><span class="n">field</span><span class="o">.</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwargs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">id</span>
+        <span class="c1"># because referenceIdFields come second, they override</span>
+        <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="o">**</span><span class="n">kwargs</span><span class="p">,</span> <span class="o">**</span><span class="n">referenceIdFields</span><span class="p">}</span>
+
+        <span class="c1"># Initialized the wrapped Proto-Message</span>
+        <span class="c1">#  =====================================</span>
+        <span class="c1"># Create a protobuf-instance as data-container and initalize it with the data we got</span>
+        <span class="c1"># via kwargs. In this way to user can use the Message class as if it would be a</span>
+        <span class="c1"># proto-message and we can extend our functionality around it.</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="n">proto</span> <span class="o">=</span> <span class="n">name_to_grpc_message_or_method</span><span class="p">(</span><span class="n">name</span><span class="p">)()</span>
+        <span class="n">proto</span> <span class="o">=</span> <span class="n">ParseDict</span><span class="p">(</span><span class="n">kwargs</span><span class="p">,</span> <span class="n">proto</span><span class="p">,</span> <span class="n">ignore_unknown_fields</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="c1"># We use the Message class to wrap the proto-message-class which holds the actual data.</span>
+        <span class="c1"># thus we set the data into the proto-attribute and whenever someone asks us for data</span>
+        <span class="c1"># we take it from there</span>
+        <span class="c1"># required to do it with __setattr__, as __setattr__ already needs</span>
+        <span class="c1"># self.proto</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__setattr__</span><span class="p">(</span><span class="s1">&#39;proto&#39;</span><span class="p">,</span> <span class="n">proto</span><span class="p">)</span>
+
+        <span class="c1"># Initalize Lazy Loading</span>
+        <span class="c1">#  ======================</span>
+        <span class="c1"># self._loaded indicates, if the data is loaded from the database. We often only transfer</span>
+        <span class="c1"># the ID of the model over the wire. In this case, the have to take this ID and ask the</span>
+        <span class="c1"># database for the data belongin to this ID and set it to the fields. But we want to do this</span>
+        <span class="c1"># lazy. Thus we initialize the class with only the ID, set the _loaded=False (which is done</span>
+        <span class="c1"># by the web layer) and as soon as the DB set the data, it sets it back</span>
+        <span class="c1"># to _loaded=False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_loaded</span> <span class="o">=</span> <span class="kc">True</span>  <span class="c1"># per default, the ORM- or Web-Layer should set it to False, if not</span>
+
+    <span class="c1"># TODO: isn&#39;t __getattr__ more suitable?</span>
+
+    <span class="k">def</span> <span class="fm">__getattribute__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        As Message is in the runtime only a wrapper around protobuf, return the data from the</span>
+<span class="sd">        self.proto</span>
+<span class="sd">        But there is additional functionality we want like lazy loading or ReferenceFields which</span>
+<span class="sd">        have to be resolved on the fly</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="k">def</span> <span class="nf">attr</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+<span class="w">            </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">            A little helper to access fields of the Message-Object and not run into</span>
+<span class="sd">            recursion as self.n would call __getattribute__(self, n) and so on.</span>
+<span class="sd">            &#39;&#39;&#39;</span>
+            <span class="k">return</span> <span class="nb">object</span><span class="o">.</span><span class="fm">__getattribute__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+
+        <span class="k">def</span> <span class="nf">take_value_from_proto_and_maybe_lazy_load</span><span class="p">():</span>
+            <span class="c1"># do not lazy load, if</span>
+            <span class="c1">#   - the requested attribute is id, as is is has to be already present, thus no need for lazy loading</span>
+            <span class="c1">#   - we not already have done so. The DB- and Web-Layer set _loaded to false when creating an instance</span>
+            <span class="c1">#   - the ID is not set, lazy loading converts the ID to the data</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;id&#39;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">attr</span><span class="p">(</span><span class="s1">&#39;_loaded&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">attr</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">):</span>
+                <span class="n">db_result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">query</span><span class="p">(</span>
+                    <span class="n">attr</span><span class="p">(</span><span class="s1">&#39;proto&#39;</span><span class="p">)</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="p">{</span>
+                        <span class="s1">&#39;_id&#39;</span><span class="p">:</span> <span class="n">attr</span><span class="p">(</span><span class="s1">&#39;_id&#39;</span><span class="p">)})</span>
+                <span class="k">if</span> <span class="n">db_result</span><span class="p">:</span>
+                    <span class="n">loaded_doc_from_db</span> <span class="o">=</span> <span class="n">db_result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                    <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;proto&#39;</span><span class="p">,</span> <span class="n">loaded_doc_from_db</span><span class="p">)</span>
+                    <span class="c1"># when using only setattr, the getattr outide the if gets still</span>
+                    <span class="c1"># the old message. It works, when doing it a second time, but this</span>
+                    <span class="c1"># is too hacky. I don&#39;t know why. If we return the value of the</span>
+                    <span class="c1"># freshly loaded object it works on the first try.</span>
+                    <span class="c1"># DO NOT DELETE !! read the comment above!</span>
+                    <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">loaded_doc_from_db</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+
+            <span class="c1"># lazy loading not required / has no effect. Return the value already in the proto-message</span>
+            <span class="c1"># This should be the normal case</span>
+            <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">proto</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+
+        <span class="c1"># normal case, if values are present and lazy-loading</span>
+        <span class="c1">#  ===================================================</span>
+        <span class="c1"># If the proto-message has the given field we can return it</span>
+        <span class="c1"># directoly or load it on the fly</span>
+        <span class="n">proto</span> <span class="o">=</span> <span class="n">attr</span><span class="p">(</span><span class="s1">&#39;proto&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">proto</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">take_value_from_proto_and_maybe_lazy_load</span><span class="p">()</span>
+
+        <span class="c1"># ReferenceFields (Foreign Keys) Lazy Loading</span>
+        <span class="c1">#  ==============================================</span>
+        <span class="c1"># If the proto-message does not have the requested field, check if it</span>
+        <span class="c1"># is an reference field.</span>
+        <span class="c1"># References of Reference-Fields only contain the ID to the referenced</span>
+        <span class="c1"># objects, thus are always lazy. This means, that we have to load them</span>
+        <span class="c1"># on the fly.</span>
+        <span class="c1"># More complexity is added because we alsow allow repeated ReferenceFields</span>
+        <span class="c1"># to allow unidirectoral Many-To-Many definition</span>
+        <span class="n">attribute_value</span> <span class="o">=</span> <span class="n">attr</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">attribute_value</span><span class="p">,</span> <span class="n">ReferenceField</span><span class="p">):</span>  <span class="c1"># lazy load first!</span>
+
+            <span class="k">if</span> <span class="n">attribute_value</span><span class="o">.</span><span class="n">repeated</span><span class="p">:</span>
+                <span class="n">foreign_objects_ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                    <span class="nb">getattr</span><span class="p">(</span><span class="n">attr</span><span class="p">(</span><span class="s1">&#39;proto&#39;</span><span class="p">),</span> <span class="n">attribute_value</span><span class="o">.</span><span class="n">name</span><span class="p">))</span>
+                <span class="n">db_res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">query</span><span class="p">(</span>
+                    <span class="n">attribute_value</span><span class="o">.</span><span class="n">otherClass</span><span class="p">,</span> <span class="p">{</span>
+                        <span class="s1">&#39;_id&#39;</span><span class="p">:</span> <span class="p">{</span>
+                            <span class="s1">&#39;$in&#39;</span><span class="p">:</span> <span class="n">foreign_objects_ids</span><span class="p">}})</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">db_res</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="p">[]</span>
+                <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">db_res</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">db_res</span>
+
+            <span class="k">else</span><span class="p">:</span>  <span class="c1"># not repeatet</span>
+                <span class="n">foreign_object_id</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span>
+                    <span class="n">attr</span><span class="p">(</span><span class="s1">&#39;proto&#39;</span><span class="p">),</span> <span class="n">attribute_value</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">foreign_object_id</span><span class="p">:</span>
+                    <span class="n">db_res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">query</span><span class="p">(</span>
+                        <span class="n">attribute_value</span><span class="o">.</span><span class="n">otherClass</span><span class="p">,</span> <span class="p">{</span>
+                            <span class="s1">&#39;_id&#39;</span><span class="p">:</span> <span class="n">foreign_object_id</span><span class="p">})</span>
+                    <span class="k">if</span> <span class="ow">not</span> <span class="n">db_res</span><span class="p">:</span>
+                        <span class="k">return</span> <span class="kc">None</span>  <span class="c1"># Or create an empty instance ??</span>
+                    <span class="n">attribute_value</span> <span class="o">=</span> <span class="n">db_res</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                    <span class="c1"># cache for the next time (getattr will pick it up)</span>
+                    <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">attribute_value</span><span class="p">)</span>
+                    <span class="k">return</span> <span class="n">attribute_value</span>
+
+                <span class="c1"># in this case, there is no id assigned yet. Initalize an empty container, so that the user still</span>
+                <span class="c1"># can set attributes this is only relevant, if not repeated. In the latter case it would just be</span>
+                <span class="c1"># an empty list and we can expect that the user adds new</span>
+                <span class="c1"># instances to the list.</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">attribute_value</span> <span class="o">=</span> <span class="n">attribute_value</span><span class="o">.</span><span class="n">otherClass</span><span class="p">()</span>
+                    <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">attribute_value</span><span class="p">)</span>
+                    <span class="k">return</span> <span class="n">attribute_value</span>
+
+        <span class="c1"># Return attribute of extended class</span>
+        <span class="c1">#  ==================================</span>
+        <span class="c1"># If it not a reference-field and not part of the proto-message, it has to be defined</span>
+        <span class="c1"># in the extended Message-Class by the user, e.g. by self.abc = &#39;value&#39;</span>
+        <span class="c1"># In this case, we can just return the value, we obtained via attr(name) which is like</span>
+        <span class="c1"># calling self.`name`</span>
+
+        <span class="k">return</span> <span class="n">attribute_value</span>
+
+    <span class="k">def</span> <span class="fm">__setattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        If the proto-message has the attribute, set the value there</span>
+<span class="sd">        else set it to this class.</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">proto</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+            <span class="k">return</span> <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">proto</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__setattr__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">proto</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">other</span><span class="p">))</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">proto</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">proto</span>
+
+    <span class="k">def</span> <span class="nf">set_defaults</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">creating</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Called by the database-layer on store (either on create or update)</span>
+<span class="sd">        Gives a hook to set the right defaults at the right time.</span>
+<span class="sd">        Itererates through the fields and calls their set_defaults. Thus</span>
+<span class="sd">        it distributes the work down. See the subclasses of Field for</span>
+<span class="sd">        details.</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="fm">__getattribute__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;__class__&#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">fieldName</span> <span class="ow">in</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">f</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)]:</span>
+            <span class="n">field</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="fm">__getattribute__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fieldName</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">Field</span><span class="p">):</span>
+                <span class="n">field</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">fieldName</span>
+                <span class="n">field</span><span class="o">.</span><span class="n">set_defaults</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">creating</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">db</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        When the user defines the model, this class is extended. Within the</span>
+<span class="sd">        methods, he wants to use self.db -&gt; This becomes possible with this.</span>
+<span class="sd">        It is set by the server, which connects to the correct database for</span>
+<span class="sd">        every request.</span>
+
+<span class="sd">        Also used for lazy-loading resolve in the __getattribute__ part.</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="kn">from</span> <span class="nn">.provide</span> <span class="kn">import</span> <span class="n">use_provided</span>
+        <span class="kn">from</span> <span class="nn">proto_model.db</span> <span class="kn">import</span> <span class="n">DB_KEY</span>
+        <span class="k">return</span> <span class="n">use_provided</span><span class="p">(</span><span class="n">DB_KEY</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="proto_model.pm.Message.db" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">db</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>When the user defines the model, this class is extended. Within the
+methods, he wants to use self.db -&gt; This becomes possible with this.
+It is set by the server, which connects to the correct database for
+every request.</p>
+<p>Also used for lazy-loading resolve in the <strong>getattribute</strong> part.</p>
+  </div>
+
+</div>
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="proto_model.pm.Message.__getattribute__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__getattribute__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>As Message is in the runtime only a wrapper around protobuf, return the data from the
+self.proto
+But there is additional functionality we want like lazy loading or ReferenceFields which
+have to be resolved on the fly</p>
+
+      <details class="quote">
+        <summary>Source code in <code>proto_model/pm.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__getattribute__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    As Message is in the runtime only a wrapper around protobuf, return the data from the</span>
+<span class="sd">    self.proto</span>
+<span class="sd">    But there is additional functionality we want like lazy loading or ReferenceFields which</span>
+<span class="sd">    have to be resolved on the fly</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="k">def</span> <span class="nf">attr</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        A little helper to access fields of the Message-Object and not run into</span>
+<span class="sd">        recursion as self.n would call __getattribute__(self, n) and so on.</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="nb">object</span><span class="o">.</span><span class="fm">__getattribute__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">take_value_from_proto_and_maybe_lazy_load</span><span class="p">():</span>
+        <span class="c1"># do not lazy load, if</span>
+        <span class="c1">#   - the requested attribute is id, as is is has to be already present, thus no need for lazy loading</span>
+        <span class="c1">#   - we not already have done so. The DB- and Web-Layer set _loaded to false when creating an instance</span>
+        <span class="c1">#   - the ID is not set, lazy loading converts the ID to the data</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;id&#39;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">attr</span><span class="p">(</span><span class="s1">&#39;_loaded&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">attr</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">):</span>
+            <span class="n">db_result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">query</span><span class="p">(</span>
+                <span class="n">attr</span><span class="p">(</span><span class="s1">&#39;proto&#39;</span><span class="p">)</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="p">{</span>
+                    <span class="s1">&#39;_id&#39;</span><span class="p">:</span> <span class="n">attr</span><span class="p">(</span><span class="s1">&#39;_id&#39;</span><span class="p">)})</span>
+            <span class="k">if</span> <span class="n">db_result</span><span class="p">:</span>
+                <span class="n">loaded_doc_from_db</span> <span class="o">=</span> <span class="n">db_result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;proto&#39;</span><span class="p">,</span> <span class="n">loaded_doc_from_db</span><span class="p">)</span>
+                <span class="c1"># when using only setattr, the getattr outide the if gets still</span>
+                <span class="c1"># the old message. It works, when doing it a second time, but this</span>
+                <span class="c1"># is too hacky. I don&#39;t know why. If we return the value of the</span>
+                <span class="c1"># freshly loaded object it works on the first try.</span>
+                <span class="c1"># DO NOT DELETE !! read the comment above!</span>
+                <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">loaded_doc_from_db</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+
+        <span class="c1"># lazy loading not required / has no effect. Return the value already in the proto-message</span>
+        <span class="c1"># This should be the normal case</span>
+        <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">proto</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+
+    <span class="c1"># normal case, if values are present and lazy-loading</span>
+    <span class="c1">#  ===================================================</span>
+    <span class="c1"># If the proto-message has the given field we can return it</span>
+    <span class="c1"># directoly or load it on the fly</span>
+    <span class="n">proto</span> <span class="o">=</span> <span class="n">attr</span><span class="p">(</span><span class="s1">&#39;proto&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">proto</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">take_value_from_proto_and_maybe_lazy_load</span><span class="p">()</span>
+
+    <span class="c1"># ReferenceFields (Foreign Keys) Lazy Loading</span>
+    <span class="c1">#  ==============================================</span>
+    <span class="c1"># If the proto-message does not have the requested field, check if it</span>
+    <span class="c1"># is an reference field.</span>
+    <span class="c1"># References of Reference-Fields only contain the ID to the referenced</span>
+    <span class="c1"># objects, thus are always lazy. This means, that we have to load them</span>
+    <span class="c1"># on the fly.</span>
+    <span class="c1"># More complexity is added because we alsow allow repeated ReferenceFields</span>
+    <span class="c1"># to allow unidirectoral Many-To-Many definition</span>
+    <span class="n">attribute_value</span> <span class="o">=</span> <span class="n">attr</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">attribute_value</span><span class="p">,</span> <span class="n">ReferenceField</span><span class="p">):</span>  <span class="c1"># lazy load first!</span>
+
+        <span class="k">if</span> <span class="n">attribute_value</span><span class="o">.</span><span class="n">repeated</span><span class="p">:</span>
+            <span class="n">foreign_objects_ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                <span class="nb">getattr</span><span class="p">(</span><span class="n">attr</span><span class="p">(</span><span class="s1">&#39;proto&#39;</span><span class="p">),</span> <span class="n">attribute_value</span><span class="o">.</span><span class="n">name</span><span class="p">))</span>
+            <span class="n">db_res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">query</span><span class="p">(</span>
+                <span class="n">attribute_value</span><span class="o">.</span><span class="n">otherClass</span><span class="p">,</span> <span class="p">{</span>
+                    <span class="s1">&#39;_id&#39;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s1">&#39;$in&#39;</span><span class="p">:</span> <span class="n">foreign_objects_ids</span><span class="p">}})</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">db_res</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">[]</span>
+            <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">db_res</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">db_res</span>
+
+        <span class="k">else</span><span class="p">:</span>  <span class="c1"># not repeatet</span>
+            <span class="n">foreign_object_id</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span>
+                <span class="n">attr</span><span class="p">(</span><span class="s1">&#39;proto&#39;</span><span class="p">),</span> <span class="n">attribute_value</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">foreign_object_id</span><span class="p">:</span>
+                <span class="n">db_res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">query</span><span class="p">(</span>
+                    <span class="n">attribute_value</span><span class="o">.</span><span class="n">otherClass</span><span class="p">,</span> <span class="p">{</span>
+                        <span class="s1">&#39;_id&#39;</span><span class="p">:</span> <span class="n">foreign_object_id</span><span class="p">})</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">db_res</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="kc">None</span>  <span class="c1"># Or create an empty instance ??</span>
+                <span class="n">attribute_value</span> <span class="o">=</span> <span class="n">db_res</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="c1"># cache for the next time (getattr will pick it up)</span>
+                <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">attribute_value</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">attribute_value</span>
+
+            <span class="c1"># in this case, there is no id assigned yet. Initalize an empty container, so that the user still</span>
+            <span class="c1"># can set attributes this is only relevant, if not repeated. In the latter case it would just be</span>
+            <span class="c1"># an empty list and we can expect that the user adds new</span>
+            <span class="c1"># instances to the list.</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">attribute_value</span> <span class="o">=</span> <span class="n">attribute_value</span><span class="o">.</span><span class="n">otherClass</span><span class="p">()</span>
+                <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">attribute_value</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">attribute_value</span>
+
+    <span class="c1"># Return attribute of extended class</span>
+    <span class="c1">#  ==================================</span>
+    <span class="c1"># If it not a reference-field and not part of the proto-message, it has to be defined</span>
+    <span class="c1"># in the extended Message-Class by the user, e.g. by self.abc = &#39;value&#39;</span>
+    <span class="c1"># In this case, we can just return the value, we obtained via attr(name) which is like</span>
+    <span class="c1"># calling self.`name`</span>
+
+    <span class="k">return</span> <span class="n">attribute_value</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="proto_model.pm.Message.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">arg</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Prepares the kwargs for protobuf, creates a probouf message and sets the
+data passed via kwargs to it. Message is a wrapper around a protobuf message
+using <strong>getattribute</strong> and <strong>setattribute</strong> and the protobuf-message is
+responsible of holding the data, while this class can add "extension-methods"
+to it.
+Beside that this constructor does house-keeping like setting the names of its
+fields and sets up lazy-loading.</p>
+
+      <details class="quote">
+        <summary>Source code in <code>proto_model/pm.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">arg</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Prepares the kwargs for protobuf, creates a probouf message and sets the</span>
+<span class="sd">    data passed via kwargs to it. Message is a wrapper around a protobuf message</span>
+<span class="sd">    using __getattribute__ and __setattribute__ and the protobuf-message is</span>
+<span class="sd">    responsible of holding the data, while this class can add &quot;extension-methods&quot;</span>
+<span class="sd">    to it.</span>
+<span class="sd">    Beside that this constructor does house-keeping like setting the names of its</span>
+<span class="sd">    fields and sets up lazy-loading.</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="c1"># Set the names to the fields</span>
+    <span class="c1">#  ===========================</span>
+    <span class="c1"># We define the fields like: `address = EmbeddedField(5, Address)`</span>
+    <span class="c1"># where the EmbeddedField is a field. But now, the field-name is external</span>
+    <span class="c1"># to the constructor call - on the left hand side of the equal sign (address)</span>
+    <span class="c1"># Thus we have to set it here from external, where we have both access to the</span>
+    <span class="c1"># field and the name of the message-field-attribute</span>
+    <span class="c1"># self.__class__ -- the same as self.__class__, but go around</span>
+    <span class="c1"># __getattribute__</span>
+    <span class="bp">cls</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="fm">__getattribute__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;__class__&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">fieldName</span> <span class="ow">in</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">f</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)]:</span>
+        <span class="n">field</span> <span class="o">=</span> <span class="n">_getattr_or_none</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">fieldName</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">field</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">Field</span><span class="p">):</span>
+            <span class="n">field</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">fieldName</span>
+
+    <span class="c1"># Replace ReferenceField-values with ID-strings pointing to the references object</span>
+    <span class="c1">#  ===============================================================================</span>
+    <span class="c1"># In the end of the day, we want to construct the kwargs and pass it to the</span>
+    <span class="c1"># proto-model which we wrap. This proto model contains all the data and we</span>
+    <span class="c1"># wrap it via the __getattribute__-method.</span>
+    <span class="c1"># But when there is a ReferenceField, we don&#39;t want to give the real reference</span>
+    <span class="c1"># to the protobuf-model, but only the id. Protobuf is always serializable and</span>
+    <span class="c1"># in this world, references are IDs to other messages, not python-object-refs.</span>
+    <span class="c1"># Therefore, we loop over the kwargs, get the field of this message to get the</span>
+    <span class="c1"># type of it. Now we can check if it is a Reference field and if so, extract</span>
+    <span class="c1"># the ID and replace the entry in the kwargs with it.</span>
+    <span class="c1"># The same idea, but within a list applies when the field is also</span>
+    <span class="c1"># repeated.</span>
+    <span class="n">referenceIdFields</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="n">field</span> <span class="o">=</span> <span class="n">_getattr_or_none</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">field</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">ReferenceField</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">field</span><span class="o">.</span><span class="n">repeated</span><span class="p">:</span>
+                <span class="n">referenceIdFields</span><span class="p">[</span><span class="n">field</span><span class="o">.</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
+                    <span class="n">o</span><span class="o">.</span><span class="n">id</span> <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="p">[</span><span class="n">name</span><span class="p">]]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">referenceIdFields</span><span class="p">[</span><span class="n">field</span><span class="o">.</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwargs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">id</span>
+    <span class="c1"># because referenceIdFields come second, they override</span>
+    <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="o">**</span><span class="n">kwargs</span><span class="p">,</span> <span class="o">**</span><span class="n">referenceIdFields</span><span class="p">}</span>
+
+    <span class="c1"># Initialized the wrapped Proto-Message</span>
+    <span class="c1">#  =====================================</span>
+    <span class="c1"># Create a protobuf-instance as data-container and initalize it with the data we got</span>
+    <span class="c1"># via kwargs. In this way to user can use the Message class as if it would be a</span>
+    <span class="c1"># proto-message and we can extend our functionality around it.</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="vm">__name__</span>
+    <span class="n">proto</span> <span class="o">=</span> <span class="n">name_to_grpc_message_or_method</span><span class="p">(</span><span class="n">name</span><span class="p">)()</span>
+    <span class="n">proto</span> <span class="o">=</span> <span class="n">ParseDict</span><span class="p">(</span><span class="n">kwargs</span><span class="p">,</span> <span class="n">proto</span><span class="p">,</span> <span class="n">ignore_unknown_fields</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="c1"># We use the Message class to wrap the proto-message-class which holds the actual data.</span>
+    <span class="c1"># thus we set the data into the proto-attribute and whenever someone asks us for data</span>
+    <span class="c1"># we take it from there</span>
+    <span class="c1"># required to do it with __setattr__, as __setattr__ already needs</span>
+    <span class="c1"># self.proto</span>
+    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__setattr__</span><span class="p">(</span><span class="s1">&#39;proto&#39;</span><span class="p">,</span> <span class="n">proto</span><span class="p">)</span>
+
+    <span class="c1"># Initalize Lazy Loading</span>
+    <span class="c1">#  ======================</span>
+    <span class="c1"># self._loaded indicates, if the data is loaded from the database. We often only transfer</span>
+    <span class="c1"># the ID of the model over the wire. In this case, the have to take this ID and ask the</span>
+    <span class="c1"># database for the data belongin to this ID and set it to the fields. But we want to do this</span>
+    <span class="c1"># lazy. Thus we initialize the class with only the ID, set the _loaded=False (which is done</span>
+    <span class="c1"># by the web layer) and as soon as the DB set the data, it sets it back</span>
+    <span class="c1"># to _loaded=False</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_loaded</span> <span class="o">=</span> <span class="kc">True</span>  <span class="c1"># per default, the ORM- or Web-Layer should set it to False, if not</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="proto_model.pm.Message.__setattr__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__setattr__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>If the proto-message has the attribute, set the value there
+else set it to this class.</p>
+
+      <details class="quote">
+        <summary>Source code in <code>proto_model/pm.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__setattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    If the proto-message has the attribute, set the value there</span>
+<span class="sd">    else set it to this class.</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">proto</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">proto</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__setattr__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="proto_model.pm.Message.set_defaults" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">set_defaults</span><span class="p">(</span><span class="n">creating</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Called by the database-layer on store (either on create or update)
+Gives a hook to set the right defaults at the right time.
+Itererates through the fields and calls their set_defaults. Thus
+it distributes the work down. See the subclasses of Field for
+details.</p>
+
+      <details class="quote">
+        <summary>Source code in <code>proto_model/pm.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span>
+<span class="normal">257</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">set_defaults</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">creating</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Called by the database-layer on store (either on create or update)</span>
+<span class="sd">    Gives a hook to set the right defaults at the right time.</span>
+<span class="sd">    Itererates through the fields and calls their set_defaults. Thus</span>
+<span class="sd">    it distributes the work down. See the subclasses of Field for</span>
+<span class="sd">    details.</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="fm">__getattribute__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;__class__&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">fieldName</span> <span class="ow">in</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">f</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)]:</span>
+        <span class="n">field</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="fm">__getattribute__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fieldName</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">Field</span><span class="p">):</span>
+            <span class="n">field</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">fieldName</span>
+            <span class="n">field</span><span class="o">.</span><span class="n">set_defaults</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">creating</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div><h2 id="acknowledgements">Acknowledgements</h2>
+<p>I want to thank my house plants for providing me with
+a negligible amount of oxygen each day. Also, I want
+to thank the sun for providing more than half of their
+nourishment free of charge.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.ba449ae6.min.js"></script>
+      
+    
+  </body>
+</html>
